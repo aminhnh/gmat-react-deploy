@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gmat-react-deploy/static/css/main.073c9b0a.css",
+    "main.js": "/gmat-react-deploy/static/js/main.9ee63bf3.js",
+    "static/js/787.2691ba0d.chunk.js": "/gmat-react-deploy/static/js/787.2691ba0d.chunk.js",
+    "index.html": "/gmat-react-deploy/index.html",
+    "main.073c9b0a.css.map": "/gmat-react-deploy/static/css/main.073c9b0a.css.map",
+    "main.9ee63bf3.js.map": "/gmat-react-deploy/static/js/main.9ee63bf3.js.map",
+    "787.2691ba0d.chunk.js.map": "/gmat-react-deploy/static/js/787.2691ba0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9ee63bf3.js"
+  ]
+}
