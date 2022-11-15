@@ -52,21 +52,27 @@ function App() {
   return (
     <div className="App">
       <h2>GMAT Software Programmer Instership Final Project</h2>
-      <h3>
+      <h4>
         Aminah Nurul Huda <br></br> 22/494455/SV/20830
-      </h3>
+      </h4>
       <div className="inline">
         <div className="MapClass">
           <Map />
         </div>
         <div className="inline">
-          <p>Team ID: {data?.TEAM_ID}</p>
-          <p>TIME: {data?.CLOCK}</p>
-          <p>Latitude: {data?.LATITUDE}</p>
-          <p>Longitude: {data?.LONGITUDE}</p>
-          <p>Voltage: {data?.VOLTAGE}</p>
-          <p>Pressure: {data?.PRESSURE}</p>
-          <p>Altitude: {data?.ALTITUDE}</p>
+          <p className="color">------</p>
+        </div>
+        <div className="inline">
+          <p className="marg">Team ID: {data?.TEAM_ID}</p>
+          <p className="marg">TIME: {data?.CLOCK}</p>
+          <p className="marg">Latitude: {data?.LATITUDE}</p>
+          <p className="marg">Longitude: {data?.LONGITUDE}</p>
+          <p className="marg">Voltage: {data?.VOLTAGE}</p>
+          <p className="marg">Pressure: {data?.PRESSURE}</p>
+          <p className="marg">Altitude: {data?.ALTITUDE}</p>
+        </div>
+        <div className="inline">
+          <p className="color">----------</p>
         </div>
       </div>
       <div className="flex-container">

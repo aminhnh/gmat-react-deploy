@@ -16,6 +16,16 @@
 
 .inline {
   display: inline-block;
+  margin: 150 px;
+  padding: 150 px;
+}
+
+.color {
+  color: white;
+}
+
+.marg {
+  margin-left: 50 px;
 }
 
 .MapClass {
