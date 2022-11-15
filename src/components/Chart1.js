@@ -61,7 +61,6 @@ export default function Chart1({ data, label, title = "Chart" }) {
 
   useEffect(() => {
     if (!chart) return;
-    console.log(data, label);
 
     const dataObject = [];
 

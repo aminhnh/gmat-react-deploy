@@ -5,24 +5,18 @@ import { useEffect, useState } from "react";
 import Chart1 from "./components/Chart1.js";
 
 function App() {
-  // useEffect(function () {
-  //   const socket = io("https://gmat-backend.herokuapp.com/");
-  //   socket.on("DATA", function (payload) {
-  //     console.log(payload);
-  //   });
-  // });
   const [socket, setSocket] = useState(null);
   const [data, setData] = useState();
 
   const [voltages, setVoltages] = useState([]);
   const [pressures, setPressures] = useState([]);
+  const [altitudes, setAltitudes] = useState([]);
   const [clocks, setClocks] = useState([]);
 
   useEffect(
     function () {
       // if (socket) return;
       const socket = io("https://gmat-backend.herokuapp.com/");
-      console.log("connected");
       setSocket(socket.io);
     },
     [socket]
@@ -48,6 +42,7 @@ function App() {
 
       setVoltages((voltages) => [...voltages, dataSensor.VOLTAGE]);
       setPressures((pressures) => [...pressures, dataSensor.PRESSURE]);
+      setAltitudes((altitudes) => [...altitudes, dataSensor.ALTITUDE]);
       setClocks((clocks) => [...clocks, dataSensor.CLOCK]);
 
       setData(dataSensor);
@@ -60,12 +55,18 @@ function App() {
       <h3>
         Aminah Nurul Huda <br></br> 22/494455/SV/20830
       </h3>
-      <div>
+      <div className="inline">
         <div className="MapClass">
-          <Map className="MapClass" />
+          <Map />
         </div>
-        <div>
-          <h2>Latitude: {data?.LATITUDE}</h2>
+        <div className="inline">
+          <p>Team ID: {data?.TEAM_ID}</p>
+          <p>TIME: {data?.CLOCK}</p>
+          <p>Latitude: {data?.LATITUDE}</p>
+          <p>Longitude: {data?.LONGITUDE}</p>
+          <p>Voltage: {data?.VOLTAGE}</p>
+          <p>Pressure: {data?.PRESSURE}</p>
+          <p>Altitude: {data?.ALTITUDE}</p>
         </div>
       </div>
       <div className="flex-container">
@@ -74,6 +75,9 @@ function App() {
         </div>
         <div>
           <Chart1 data={pressures} label={clocks} title="Pressure" />
+        </div>
+        <div>
+          <Chart1 data={altitudes} label={clocks} title="Altitudes" />
         </div>
       </div>
     </div>
