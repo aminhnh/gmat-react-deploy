@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/gmat-react-deploy/static/css/main.a24221d2.css",
-    "main.js": "/gmat-react-deploy/static/js/main.0f413308.js",
+    "main.js": "/gmat-react-deploy/static/js/main.2637b356.js",
     "static/js/787.2691ba0d.chunk.js": "/gmat-react-deploy/static/js/787.2691ba0d.chunk.js",
     "index.html": "/gmat-react-deploy/index.html",
     "main.a24221d2.css.map": "/gmat-react-deploy/static/css/main.a24221d2.css.map",
-    "main.0f413308.js.map": "/gmat-react-deploy/static/js/main.0f413308.js.map",
+    "main.2637b356.js.map": "/gmat-react-deploy/static/js/main.2637b356.js.map",
     "787.2691ba0d.chunk.js.map": "/gmat-react-deploy/static/js/787.2691ba0d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a24221d2.css",
-    "static/js/main.0f413308.js"
+    "static/js/main.2637b356.js"
   ]
 }
