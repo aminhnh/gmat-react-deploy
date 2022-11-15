@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <h2>GMAT Software Programmer Instership Final Project</h2>
+      <h2>GMAT Software Programmer Internship Final Project</h2>
       <h4>
         Aminah Nurul Huda <br></br> 22/494455/SV/20830
       </h4>
